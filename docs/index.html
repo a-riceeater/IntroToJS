@@ -8,91 +8,14 @@
 
     <script src="SyntaxHighlight.js" defer></script>
     <link rel="stylesheet" href="SyntaxHighlight.css">
+
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <div class="topbar"></div>
-
-    <code>
-        <pre id="code">
-            /**
-            * SyntaxHighlight.JS
-            * Copyright (c) Elijah Bantugan 2023
-            * MIT License
-            * @github https://github.com/a-riceeater/SyntaxHiglight.JS
-            * @contributors TBD CONTRIBUTORS GITHUB LINK
-            */
-           
-           
-           const SupportedHighlightLanguages = [
-               "js",
-               "javascript",
-               "html",
-               "css",
-               "python",
-               "py",
-               "java"
-           ]
-           
-           /**
-            * The class that provides functions to syntax highlight an element.
-            * @param {HTMLElement} Element The element to syntax highlight.
-            */
-           
-           class SyntaxHighlight {
-               constructor(element) {
-           
-                   return {
-           
-                       /**
-                        * Syntax highlight the elements text content
-                        * @param {String} Language The programing language contained in the element, which will be used to determine the syntax highlighting.
-                        * @param {String} Theme A number specifying the theme used to syntax highlight the text. Options are `light` or `dark`.
-                        * 
-                        * If there is a language provided that is not supported, an error will be thrown. Supported languages will be showed on the github repository.
-                        */
-           
-                       highlight: function (language = "", theme = "dark") {
-                           if (!SupportedHighlightLanguages.includes(language)) throw "Language \"" + language + "\" is not supported."
-           
-                           let text = element.innerText;
-           
-                           // Regex
-                           text = text.replace(/(['"`])(.*?)\1/g, (match, p1, p2) => `<span class="${theme}-token-qu">${p1}${p2}${p1}</span>`);
-           
-                           text = text.replace(/function\s+([A-Za-z_$][A-Za-z0-9_$]*)/g, `<span class="${theme}-token-function">function</span> <span class="${theme}-token-name">$1</span>`);
-                           text = text.replace(/([A-Za-z_$][A-Za-z0-9_$]*)\s*\.\s*([A-Za-z_$][A-Za-z0-9_$]*)/g, `<span class="dark-token-else">$1</span>.<span class="${theme}-token-name">$2</span>`);
-           
-                           text = text.replace(/([A-Za-z_$][A-Za-z0-9_$]*)\s*\(/g, `<span class="${theme}-token-name">$1</span>(`);
-           
-                           // Default                
-                           text = text.replaceAll("{", `<span class="${theme}-token-bracket">{</span>`);
-                           text = text.replaceAll("}", `<span class="${theme}-token-bracket">}</span>`);
-                           text = text.replaceAll("(", `<span class="${theme}-token-bracket">(</span>`);
-                           text = text.replaceAll(")", `<span class="${theme}-token-bracket">)</span>`);
-                           text = text.replaceAll("+", `<span class="${theme}-token-name">+</span>`);
-                           text = text.replaceAll(".", `<span class="${theme}-token-else">.</span>`);
-                           text = text.replaceAll(";", `<span class="${theme}-token-else">;</span>`);
-                           text = text.replaceAll("void", `<span class="${theme}-token-lb">void</span>`);
-           
-                           element.innerHTML = text;
-                           element.classList.add(`${theme}-container`)
-                       }
-                   }
-               }
-           }
-           
-           // Test
-           
-           const element = new SyntaxHighlight(document.getElementById("code"));
-           element.highlight("javascript");
-
-           function a() {
-            "asd"
-            'asd'
-           }
-        </pre>
-    </code>
+    <div class="topbar">
+        <a class="logo" href="/">HTML/JS Tutorial</a>
+    </div>
 
 </body>
 
