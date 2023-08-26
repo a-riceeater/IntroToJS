@@ -119,6 +119,6 @@ class SyntaxHighlight {
 }
 
 // Test
-
+/*
 const element = new SyntaxHighlight(document.getElementById("code"));
-element.highlight("html");
+element.highlight("html");*/
