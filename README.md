@@ -8,7 +8,7 @@ In this tutorial, you will learn the basics of each programming language in an e
 
 *yes, i did in fact create my own syntax highlighting library just for this website.*
 
-*https://github.com/a-riceeater/SyntaxHighlight.js*
+*[https://github.com/a-riceeater/SyntaxHighlight.js](https://github.com/a-riceeater/SyntaxHiglight.js)*
 
 ## License
 Copyright (c) Elijah Bantugan 2023
