@@ -1,6 +1,6 @@
 # HTML/JS Tutorial
 
-A basic intro course into `HTML` (Hyper Text Markup Language) and `Javascript` programming languages.
+A basic intro course into `HTML` (Hyper Text Markup Language), `Javascript`, and `Node.js` (open-source server environment, a javascript runtime)
 
 HTML and Javascript are programming language essential to web development. Any website that you have ever visited will have been programmed with HTML and javascript.
 
