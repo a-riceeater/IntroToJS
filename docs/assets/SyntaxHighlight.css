@@ -3,6 +3,7 @@
 .dark-container {
     background-color: #282c34;
     color: #abb2bf;
+    padding-bottom: 5px;
 }
 
 .dark-token-function {
