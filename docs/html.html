@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IntroToJS - intro</title>
+    <title>IntroToJS - Understanding HTML file structure</title>
 
-    <script src="./assets/SyntaxHighlight.js" defer></script>
+    <script src="./assets/SyntaxHighlight.js"></script>
     <link rel="stylesheet" href="./assets/SyntaxHighlight.css">
 
     <link rel="stylesheet" href="./assets/main.css">
@@ -18,19 +18,49 @@
     </div>
 
     <div class="main">
-        <h1>Introduction</h1>
+        <h1>HTML Filestructure</h1>
+        <p>HTML is the programing languaged used to create webpages. It is also used to import javascript files.</p>
+        <div class="codeblock" data-lang="html">
+            &#x3C;!DOCTYPE html&#x3E;
+            &#x3C;html lang=&#x22;en&#x22;&#x3E;
+            
+            &#x3C;head&#x3E;
+                &#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
+                &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;&#x3E;
+                &#x3C;title&#x3E;IntroToJS - Understanding HTML file structure&#x3C;/title&#x3E;
+            
+                &#x3C;script src=&#x22;./assets/SyntaxHighlight.js&#x22; defer&#x3E;&#x3C;/script&#x3E;
+                &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;./assets/SyntaxHighlight.css&#x22;&#x3E;
+            
+                &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;./assets/main.css&#x22;&#x3E;
+            &#x3C;/head&#x3E;
+            
+            &#x3C;body&#x3E;
+                &#x3C;div class=&#x22;topbar&#x22;&#x3E;
+                    &#x3C;a class=&#x22;logo&#x22; href=&#x22;./&#x22;&#x3E;IntroToJS &#x26; Node.JS&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            
+                &#x3C;div class=&#x22;main&#x22;&#x3E;
+                    &#x3C;h1&#x3E;HTML Filestructure&#x3C;/h1&#x3E;
+                    &#x3C;p&#x3E;HTML is the programing languaged used to create webpages. It is also used to import javascript files.&#x3C;/p&#x3E;
+                    &#x3C;div onload=&#x22;SyntaxHighlight.highlight(this)&#x22;&#x3E;
+                    
+                    &#x3C;/div&#x3E;
+            
+            
+                    &#x3C;p style=&#x22;margin-top: 40px;&#x22;&#x3E;
+                        &#x3C;a href=&#x22;./html&#x22; class=&#x22;nextl&#x22;&#x3E;Understanding HTML&#x3C;/a&#x3E;
+                    &#x3C;/p&#x3E;
+                &#x3C;/div&#x3E;
+            
+            &#x3C;/body&#x3E;
+            
+            &#x3C;/html&#x3E;
+        </div>
 
-        <p>This is a basic intro course into HTML (Hyper Text Markup Language), Javascript, and Node.js (open-source server
-            environment, a javascript runtime)</p>
-
-        <p>HTML and Javascript are programming language essential to web development. Any website that you have ever
-        visited will have been programmed with HTML and javascript.</p>
-
-        <p>Node JS is useful for creating a server, like Express, which is a back end web application framework for building RESTful APIs.</p>
-
-        <p>In this tutorial, you will learn the basics of each programming language in an easy to understand website,
-        providing code examples for each lesson.</p>
-
+        <div class="codeblock" data-lang="js">
+        console.log("hello")
+        </div>
 
 
         <p style="margin-top: 40px;">
@@ -38,6 +68,7 @@
         </p>
     </div>
 
+    <script src="./assets/highlight.js"></script>
 </body>
 
 </html>
