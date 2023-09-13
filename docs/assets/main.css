@@ -31,6 +31,7 @@
     padding-left: 50px;
     box-sizing: border-box;
     font-family: var(--noto);
+    overflow-y: scroll;
 }
 
 .logo {
@@ -47,4 +48,16 @@
 
 .nextl {
     color: var(--mc);
+}
+
+.code-span {
+    background-color: #282c34;
+    padding: 5px;
+    font-family: monospace;
+    color: lightgray;
+    font-size: 13px;
+}
+
+p {
+    font-size: 15px;
 }

@@ -20,47 +20,34 @@
     <div class="main">
         <h1>HTML Filestructure</h1>
         <p>HTML is the programing languaged used to create webpages. It is also used to import javascript files.</p>
-        <div class="codeblock" data-lang="html">
-            &#x3C;!DOCTYPE html&#x3E;
-            &#x3C;html lang=&#x22;en&#x22;&#x3E;
-            
-            &#x3C;head&#x3E;
-                &#x3C;meta charset=&#x22;UTF-8&#x22;&#x3E;
-                &#x3C;meta name=&#x22;viewport&#x22; content=&#x22;width=device-width, initial-scale=1.0&#x22;&#x3E;
-                &#x3C;title&#x3E;IntroToJS - Understanding HTML file structure&#x3C;/title&#x3E;
-            
-                &#x3C;script src=&#x22;./assets/SyntaxHighlight.js&#x22; defer&#x3E;&#x3C;/script&#x3E;
-                &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;./assets/SyntaxHighlight.css&#x22;&#x3E;
-            
-                &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;./assets/main.css&#x22;&#x3E;
-            &#x3C;/head&#x3E;
-            
-            &#x3C;body&#x3E;
-                &#x3C;div class=&#x22;topbar&#x22;&#x3E;
-                    &#x3C;a class=&#x22;logo&#x22; href=&#x22;./&#x22;&#x3E;IntroToJS &#x26; Node.JS&#x3C;/a&#x3E;
-                &#x3C;/div&#x3E;
-            
-                &#x3C;div class=&#x22;main&#x22;&#x3E;
-                    &#x3C;h1&#x3E;HTML Filestructure&#x3C;/h1&#x3E;
-                    &#x3C;p&#x3E;HTML is the programing languaged used to create webpages. It is also used to import javascript files.&#x3C;/p&#x3E;
-                    &#x3C;div onload=&#x22;SyntaxHighlight.highlight(this)&#x22;&#x3E;
-                    
-                    &#x3C;/div&#x3E;
-            
-            
-                    &#x3C;p style=&#x22;margin-top: 40px;&#x22;&#x3E;
-                        &#x3C;a href=&#x22;./html&#x22; class=&#x22;nextl&#x22;&#x3E;Understanding HTML&#x3C;/a&#x3E;
-                    &#x3C;/p&#x3E;
-                &#x3C;/div&#x3E;
-            
-            &#x3C;/body&#x3E;
-            
-            &#x3C;/html&#x3E;
-        </div>
+        <pre class="codeblock" data-lang="html">
+&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html lang=&#x22;en&#x22;&#x3E;
+&#x3C;head&#x3E;
+    &#x3C;title&#x3E;Document Title&#x3C;/title&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+                
+&#x3C;/body&#x3E;
+&#x3C;/html</pre>
 
-        <div class="codeblock" data-lang="js">
+        <p>This is the basic file structure of an HTML page.</p>
+        <p>
+            <span class="code-span">&#x3C;html lang="en"&#x3E;</span> - This is the opening html tag, which defines the root element of the HTML document. The lang attribute is set to "en," indicating that the primary language of the document is English. You can change the value of the lang attribute to specify a different language.
+        </p>
+        <p>
+            <span class="code-span">head</span> - The head element is where you include metadata and other information about the HTML document, such as character encoding, the viewport settings, and the document title.
+        </p>
+        <p>
+            <span class="code-span">title</span> - The title element is used to define the title of the HTML document, which is typically displayed in the browser's title bar or tab.
+        </p>
+        <p>
+            <span class="code-span">body</span> - The body element is the container for the main content of the HTML document. Any visible content on the web page, such as text, images, and other elements, will be placed within the body element.
+        </p>
+
+        <pre class="codeblock" data-lang="js">
         console.log("hello")
-        </div>
+        </pre>
 
 
         <p style="margin-top: 40px;">
